@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom';
-import { Home, ArrowLeft } from 'lucide-react';
-import { Button } from '../components/ui/button';
+import { Link } from "react-router-dom";
+import { Home, ArrowLeft } from "lucide-react";
+import { Button } from "../components/ui/button";
 
 export default function NotFound() {
   return (
@@ -15,7 +15,7 @@ export default function NotFound() {
             The page you're looking for doesn't exist or has been moved.
           </p>
         </div>
-        
+
         <div className="space-y-4">
           <Button
             asChild
@@ -26,7 +26,7 @@ export default function NotFound() {
               Go Home
             </Link>
           </Button>
-          
+
           <Button
             variant="outline"
             onClick={() => window.history.back()}

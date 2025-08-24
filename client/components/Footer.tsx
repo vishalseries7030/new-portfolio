@@ -1,16 +1,24 @@
-import { Github, Linkedin, Mail, Heart } from 'lucide-react';
+import { Github, Linkedin, Mail, Heart } from "lucide-react";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: Github, href: 'https://github.com/vishalseries7030', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://www.linkedin.com/in/vishal-payyawar-46a211276/', label: 'LinkedIn' },
-    { icon: Mail, href: 'mailto:vishal.payyawar@email.com', label: 'Email' },
+    {
+      icon: Github,
+      href: "https://github.com/vishalseries7030",
+      label: "GitHub",
+    },
+    {
+      icon: Linkedin,
+      href: "https://www.linkedin.com/in/vishal-payyawar-46a211276/",
+      label: "LinkedIn",
+    },
+    { icon: Mail, href: "mailto:vishal.payyawar@email.com", label: "Email" },
   ];
 
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
@@ -59,7 +67,7 @@ export function Footer() {
         {/* Bottom Section */}
         <div className="mt-8 pt-8 border-t border-white/10 text-center">
           <p className="text-foreground/50 text-xs">
-            Designed and built with modern web technologies. 
+            Designed and built with modern web technologies.
             <span className="mx-2">•</span>
             <button
               onClick={scrollToTop}
