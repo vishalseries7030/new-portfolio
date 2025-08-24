@@ -98,15 +98,19 @@ export function AboutSection() {
             </div>
           </div>
 
-          {/* Profile Image Placeholder */}
+          {/* Profile Image */}
           <div className={`transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
             <div className="relative">
-              <div className="aspect-square bg-gradient-to-br from-portfolio-navy-500/20 to-portfolio-purple-500/20 rounded-2xl p-8 border border-white/10 backdrop-blur-sm">
-                <div className="w-full h-full bg-gradient-to-br from-portfolio-navy-400 to-portfolio-purple-500 rounded-xl flex items-center justify-center">
-                  <div className="text-6xl font-bold text-white">VP</div>
+              <div className="aspect-square bg-gradient-to-br from-portfolio-navy-500/20 to-portfolio-purple-500/20 rounded-2xl p-2 border border-white/10 backdrop-blur-sm">
+                <div className="w-full h-full rounded-xl overflow-hidden">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2Ff18dacda01e04943953f826125ba7a34%2F6a186302c0a54a77bbf67d13870a03c3?format=webp&width=800"
+                    alt="Vishal Payyawar - Professional Photo"
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                  />
                 </div>
               </div>
-              <div className="absolute -bottom-4 -right-4 bg-gradient-to-r from-portfolio-cyan-500 to-portfolio-purple-500 rounded-xl p-4">
+              <div className="absolute -bottom-4 -right-4 bg-gradient-to-r from-portfolio-cyan-500 to-portfolio-purple-500 rounded-xl p-4 animate-float">
                 <Zap className="w-8 h-8 text-white" />
               </div>
             </div>

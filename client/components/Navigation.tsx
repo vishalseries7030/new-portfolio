@@ -25,8 +25,8 @@ export function Navigation() {
   ];
 
   const socialLinks = [
-    { icon: Github, href: 'https://github.com/vishal-payyawar', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://linkedin.com/in/vishal-payyawar', label: 'LinkedIn' },
+    { icon: Github, href: 'https://github.com/vishalseries7030', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/vishal-payyawar-46a211276/', label: 'LinkedIn' },
     { icon: Mail, href: 'mailto:vishal.payyawar@email.com', label: 'Email' },
   ];
 
@@ -83,12 +83,15 @@ export function Navigation() {
                 <social.icon className="w-5 h-5" />
               </a>
             ))}
-            <Button
-              onClick={() => scrollToSection('#contact')}
-              className="ml-4 bg-gradient-to-r from-portfolio-navy-500 to-portfolio-purple-600 hover:from-portfolio-navy-600 hover:to-portfolio-purple-700 text-white border-0"
+            <a
+              href="https://drive.google.com/file/d/17Gt6BQOOYRGSNkoyRY67owxQvTWpLMpm/view"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Let's Talk
-            </Button>
+              <Button className="ml-4 bg-gradient-to-r from-portfolio-navy-500 to-portfolio-purple-600 hover:from-portfolio-navy-600 hover:to-portfolio-purple-700 text-white border-0">
+                Download CV
+              </Button>
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -126,12 +129,16 @@ export function Navigation() {
                   </a>
                 ))}
               </div>
-              <Button
-                onClick={() => scrollToSection('#contact')}
-                className="w-full bg-gradient-to-r from-portfolio-navy-500 to-portfolio-purple-600 hover:from-portfolio-navy-600 hover:to-portfolio-purple-700 text-white border-0"
+              <a
+                href="https://drive.google.com/file/d/17Gt6BQOOYRGSNkoyRY67owxQvTWpLMpm/view"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full"
               >
-                Let's Talk
-              </Button>
+                <Button className="w-full bg-gradient-to-r from-portfolio-navy-500 to-portfolio-purple-600 hover:from-portfolio-navy-600 hover:to-portfolio-purple-700 text-white border-0">
+                  Download CV
+                </Button>
+              </a>
             </div>
           </div>
         )}

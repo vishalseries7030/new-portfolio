@@ -4,8 +4,8 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: Github, href: 'https://github.com/vishal-payyawar', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://linkedin.com/in/vishal-payyawar', label: 'LinkedIn' },
+    { icon: Github, href: 'https://github.com/vishalseries7030', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/vishal-payyawar-46a211276/', label: 'LinkedIn' },
     { icon: Mail, href: 'mailto:vishal.payyawar@email.com', label: 'Email' },
   ];
 

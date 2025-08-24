@@ -25,57 +25,66 @@ export function ProjectsSection() {
 
   const projects = [
     {
-      title: 'E-Commerce Platform',
-      description: 'A full-stack e-commerce solution built with React, Node.js, and MongoDB. Features include user authentication, payment integration, and admin dashboard.',
+      title: '5thDT Website Revamp',
+      description: 'A complete website revamp with modern design principles, improved user experience, and responsive layouts. Built with cutting-edge technologies for optimal performance.',
+      image: '/placeholder.svg',
+      technologies: ['React', 'Next.js', 'TypeScript', 'Tailwind', 'Vercel'],
+      github: 'https://github.com/vishalseries7030',
+      live: 'https://5thdt-website-revamp.vercel.app/',
+      featured: true,
+    },
+    {
+      title: 'Mumbai Book Fair Platform',
+      description: 'An interactive platform for Mumbai Book Fair featuring book listings, event schedules, and user engagement features with modern UI/UX design.',
+      image: '/placeholder.svg',
+      technologies: ['React', 'Node.js', 'MongoDB', 'Express', 'Tailwind'],
+      github: 'https://github.com/vishalseries7030',
+      live: 'https://mumbai-book-fair-new.vercel.app/',
+      featured: true,
+    },
+    {
+      title: 'Gorakhpur Book Fair',
+      description: 'A comprehensive digital solution for book fair management with vendor registration, book catalog, and event management capabilities.',
+      image: '/placeholder.svg',
+      technologies: ['React', 'TypeScript', 'Node.js', 'MongoDB'],
+      github: 'https://github.com/vishalseries7030',
+      live: 'https://gorakhpur-book-fair.vercel.app/',
+      featured: false,
+    },
+    {
+      title: 'Fruit Table E-commerce',
+      description: 'A modern e-commerce platform for fresh fruits with shopping cart, payment integration, and inventory management features.',
+      image: '/placeholder.svg',
+      technologies: ['React', 'Redux', 'Node.js', 'Payment Gateway'],
+      github: 'https://github.com/vishalseries7030',
+      live: 'https://fruittable.vercel.app/',
+      featured: false,
+    },
+    {
+      title: 'Full-Stack E-commerce',
+      description: 'A complete e-commerce solution with user authentication, product management, order processing, and admin dashboard.',
       image: '/placeholder.svg',
       technologies: ['React', 'Node.js', 'MongoDB', 'Stripe', 'JWT'],
-      github: 'https://github.com/vishal-payyawar/ecommerce-platform',
-      live: 'https://ecommerce-demo.vercel.app',
-      featured: true,
-    },
-    {
-      title: 'Task Management App',
-      description: 'A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.',
-      image: '/placeholder.svg',
-      technologies: ['React', 'TypeScript', 'Socket.io', 'PostgreSQL'],
-      github: 'https://github.com/vishal-payyawar/task-manager',
-      live: 'https://taskmanager-demo.vercel.app',
-      featured: true,
-    },
-    {
-      title: 'Weather Dashboard',
-      description: 'A responsive weather application with location-based forecasts, interactive maps, and detailed weather analytics.',
-      image: '/placeholder.svg',
-      technologies: ['React', 'OpenWeather API', 'Chart.js', 'Tailwind'],
-      github: 'https://github.com/vishal-payyawar/weather-dashboard',
-      live: 'https://weather-dashboard-demo.vercel.app',
+      github: 'https://github.com/vishalseries7030',
+      live: 'https://ecommerce-ten-beryl-67.vercel.app/',
       featured: false,
     },
     {
-      title: 'Portfolio Website',
-      description: 'A modern, responsive portfolio website showcasing projects and skills with smooth animations and dark mode support.',
+      title: 'Shiv Khera Books',
+      description: 'A dedicated platform for Shiv Khera\'s books with detailed descriptions, reviews, and purchase options with clean, professional design.',
       image: '/placeholder.svg',
-      technologies: ['React', 'TypeScript', 'Framer Motion', 'Tailwind'],
-      github: 'https://github.com/vishal-payyawar/portfolio',
-      live: 'https://vishal-portfolio.vercel.app',
+      technologies: ['React', 'Next.js', 'Tailwind', 'Vercel'],
+      github: 'https://github.com/vishalseries7030',
+      live: 'https://shiv-khera-books-jyic.vercel.app/',
       featured: false,
     },
     {
-      title: 'Chat Application',
-      description: 'Real-time chat application with multiple rooms, file sharing, and user presence indicators built with Socket.io.',
+      title: 'Story Book Themes',
+      description: 'An interactive storybook platform with various themes, animations, and engaging user interface for digital storytelling.',
       image: '/placeholder.svg',
-      technologies: ['React', 'Socket.io', 'Node.js', 'MongoDB'],
-      github: 'https://github.com/vishal-payyawar/chat-app',
-      live: 'https://chat-app-demo.vercel.app',
-      featured: false,
-    },
-    {
-      title: 'Blog Platform',
-      description: 'A full-featured blog platform with markdown support, comment system, and SEO optimization.',
-      image: '/placeholder.svg',
-      technologies: ['Next.js', 'MDX', 'PostgreSQL', 'Prisma'],
-      github: 'https://github.com/vishal-payyawar/blog-platform',
-      live: 'https://blog-platform-demo.vercel.app',
+      technologies: ['React', 'Framer Motion', 'CSS3', 'JavaScript'],
+      github: 'https://github.com/vishalseries7030',
+      live: 'https://story-book-themes.vercel.app/',
       featured: false,
     },
   ];
@@ -90,8 +99,8 @@ export function ProjectsSection() {
           <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <h2 className="text-4xl lg:text-5xl font-bold text-gradient mb-6">Featured Projects</h2>
             <p className="text-xl text-foreground/70 max-w-3xl mx-auto leading-relaxed">
-              A showcase of my recent work, featuring web applications built with modern technologies 
-              and best practices.
+              A showcase of my recent work, featuring web applications built with modern technologies, 
+              AI integration, and best practices in software development.
             </p>
           </div>
         </div>
@@ -109,15 +118,16 @@ export function ProjectsSection() {
               <div className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}>
                 {/* Project Image */}
                 <div className={`${index % 2 === 1 ? 'lg:col-start-2' : ''} relative group`}>
-                  <div className="aspect-video bg-gradient-to-br from-portfolio-navy-500/20 to-portfolio-purple-500/20 rounded-2xl overflow-hidden border border-white/10 backdrop-blur-sm">
-                    <img
-                      src={project.image}
-                      alt={project.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
+                  <div className="aspect-video bg-gradient-to-br from-portfolio-navy-500/20 to-portfolio-purple-500/20 rounded-2xl overflow-hidden border border-white/10 backdrop-blur-sm hover:border-white/20 transition-all duration-300">
+                    <div className="w-full h-full bg-gradient-to-br from-portfolio-navy-400/30 to-portfolio-purple-500/30 flex items-center justify-center">
+                      <div className="text-center">
+                        <ExternalLink className="w-16 h-16 text-white/80 mx-auto mb-4" />
+                        <p className="text-white/70 font-medium">Live Project</p>
+                      </div>
+                    </div>
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   </div>
-                  <div className="absolute -bottom-4 -right-4 bg-gradient-to-r from-portfolio-cyan-500 to-portfolio-purple-500 rounded-xl p-3">
+                  <div className="absolute -bottom-4 -right-4 bg-gradient-to-r from-portfolio-cyan-500 to-portfolio-purple-500 rounded-xl p-3 animate-float">
                     <ExternalLink className="w-6 h-6 text-white" />
                   </div>
                 </div>
@@ -133,7 +143,7 @@ export function ProjectsSection() {
                     {project.technologies.map((tech) => (
                       <span
                         key={tech}
-                        className="px-3 py-1 bg-white/10 backdrop-blur-sm rounded-full text-sm font-medium text-foreground/80 border border-white/20"
+                        className="px-3 py-1 bg-white/10 backdrop-blur-sm rounded-full text-sm font-medium text-foreground/80 border border-white/20 hover:border-white/40 transition-all duration-300"
                       >
                         {tech}
                       </span>
@@ -143,14 +153,14 @@ export function ProjectsSection() {
                   <div className="flex items-center space-x-4">
                     <Button
                       asChild
-                      className="bg-gradient-to-r from-portfolio-navy-500 to-portfolio-purple-600 hover:from-portfolio-navy-600 hover:to-portfolio-purple-700 text-white border-0"
+                      className="bg-gradient-to-r from-portfolio-navy-500 to-portfolio-purple-600 hover:from-portfolio-navy-600 hover:to-portfolio-purple-700 text-white border-0 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
                     >
                       <a href={project.live} target="_blank" rel="noopener noreferrer">
                         <ExternalLink className="w-4 h-4 mr-2" />
                         Live Demo
                       </a>
                     </Button>
-                    <Button variant="outline" asChild className="border-white/20 hover:border-white/40 bg-white/5 hover:bg-white/10">
+                    <Button variant="outline" asChild className="border-white/20 hover:border-white/40 bg-white/5 hover:bg-white/10 backdrop-blur-sm">
                       <a href={project.github} target="_blank" rel="noopener noreferrer">
                         <Github className="w-4 h-4 mr-2" />
                         Source Code
@@ -170,20 +180,16 @@ export function ProjectsSection() {
             {otherProjects.map((project, index) => (
               <div
                 key={project.title}
-                className={`group bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:border-white/20 transition-all duration-300 hover:transform hover:scale-105 ${
+                className={`group bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:border-white/20 transition-all duration-300 hover:transform hover:scale-105 hover:shadow-xl ${
                   isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
                 }`}
                 style={{ transitionDelay: `${1200 + index * 100}ms` }}
               >
                 <div className="mb-4">
-                  <div className="aspect-video bg-gradient-to-br from-portfolio-navy-500/20 to-portfolio-purple-500/20 rounded-lg overflow-hidden mb-4">
-                    <img
-                      src={project.image}
-                      alt={project.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
+                  <div className="aspect-video bg-gradient-to-br from-portfolio-navy-500/20 to-portfolio-purple-500/20 rounded-lg overflow-hidden mb-4 flex items-center justify-center border border-white/10">
+                    <ExternalLink className="w-8 h-8 text-white/60 group-hover:text-white/80 transition-colors duration-300" />
                   </div>
-                  <h4 className="text-xl font-semibold text-foreground mb-2">{project.title}</h4>
+                  <h4 className="text-xl font-semibold text-foreground mb-2 group-hover:text-gradient transition-all duration-300">{project.title}</h4>
                   <p className="text-foreground/70 text-sm leading-relaxed">{project.description}</p>
                 </div>
 
@@ -191,13 +197,13 @@ export function ProjectsSection() {
                   {project.technologies.slice(0, 3).map((tech) => (
                     <span
                       key={tech}
-                      className="px-2 py-1 bg-white/10 rounded-full text-xs font-medium text-foreground/80"
+                      className="px-2 py-1 bg-white/10 rounded-full text-xs font-medium text-foreground/80 group-hover:bg-white/20 transition-all duration-300"
                     >
                       {tech}
                     </span>
                   ))}
                   {project.technologies.length > 3 && (
-                    <span className="px-2 py-1 bg-white/10 rounded-full text-xs font-medium text-foreground/80">
+                    <span className="px-2 py-1 bg-white/10 rounded-full text-xs font-medium text-foreground/80 group-hover:bg-white/20 transition-all duration-300">
                       +{project.technologies.length - 3}
                     </span>
                   )}
@@ -209,7 +215,7 @@ export function ProjectsSection() {
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-foreground/60 hover:text-foreground transition-colors duration-200"
+                      className="text-foreground/60 hover:text-foreground transition-colors duration-200 hover:scale-110 transform"
                     >
                       <Github className="w-5 h-5" />
                     </a>
@@ -217,7 +223,7 @@ export function ProjectsSection() {
                       href={project.live}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-foreground/60 hover:text-foreground transition-colors duration-200"
+                      className="text-foreground/60 hover:text-foreground transition-colors duration-200 hover:scale-110 transform"
                     >
                       <ExternalLink className="w-5 h-5" />
                     </a>
@@ -235,9 +241,9 @@ export function ProjectsSection() {
             asChild
             variant="outline"
             size="lg"
-            className="border-2 border-portfolio-navy-500/20 hover:border-portfolio-navy-500/40 bg-white/5 hover:bg-white/10 px-8 py-4 text-lg font-semibold rounded-full backdrop-blur-sm transition-all duration-300"
+            className="border-2 border-portfolio-navy-500/20 hover:border-portfolio-navy-500/40 bg-white/5 hover:bg-white/10 px-8 py-4 text-lg font-semibold rounded-full backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:shadow-lg"
           >
-            <a href="https://github.com/vishal-payyawar" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/vishalseries7030" target="_blank" rel="noopener noreferrer">
               <Github className="w-5 h-5 mr-2" />
               View All Projects on GitHub
             </a>

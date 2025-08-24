@@ -25,31 +25,41 @@ export function SkillsSection() {
     {
       title: 'Frontend',
       skills: [
-        { name: 'React', level: 90 },
-        { name: 'TypeScript', level: 85 },
-        { name: 'Next.js', level: 80 },
+        { name: 'React', level: 95 },
+        { name: 'TypeScript', level: 90 },
+        { name: 'Next.js', level: 85 },
         { name: 'Tailwind CSS', level: 95 },
-        { name: 'JavaScript', level: 90 },
+        { name: 'JavaScript', level: 95 },
       ],
     },
     {
-      title: 'Backend',
+      title: 'Backend & Languages',
       skills: [
-        { name: 'Node.js', level: 85 },
-        { name: 'Express.js', level: 80 },
-        { name: 'MongoDB', level: 75 },
-        { name: 'PostgreSQL', level: 70 },
-        { name: 'REST APIs', level: 85 },
+        { name: 'Node.js', level: 90 },
+        { name: 'Python', level: 85 },
+        { name: 'Java', level: 80 },
+        { name: 'Express.js', level: 85 },
+        { name: 'MongoDB', level: 80 },
       ],
     },
     {
-      title: 'Tools & Others',
+      title: 'AI & ML',
       skills: [
-        { name: 'Git & GitHub', level: 90 },
-        { name: 'Docker', level: 70 },
-        { name: 'AWS', level: 65 },
-        { name: 'Figma', level: 80 },
-        { name: 'Agile/Scrum', level: 85 },
+        { name: 'Generative AI', level: 85 },
+        { name: 'Machine Learning', level: 80 },
+        { name: 'LLMs', level: 85 },
+        { name: 'NLP', level: 80 },
+        { name: 'AI Integration', level: 90 },
+      ],
+    },
+    {
+      title: 'DevOps & Cloud',
+      skills: [
+        { name: 'Docker', level: 85 },
+        { name: 'Jenkins', level: 75 },
+        { name: 'Kubernetes', level: 70 },
+        { name: 'AWS', level: 80 },
+        { name: 'Kafka', level: 70 },
       ],
     },
   ];
@@ -66,7 +76,7 @@ export function SkillsSection() {
           </div>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8">
+        <div className="grid lg:grid-cols-2 xl:grid-cols-4 gap-8">
           {skillCategories.map((category, categoryIndex) => (
             <div
               key={category.title}
@@ -112,8 +122,8 @@ export function SkillsSection() {
           <h3 className="text-2xl font-semibold text-center text-foreground mb-12">Technologies I Work With</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
             {[
-              'React', 'Node.js', 'TypeScript', 'MongoDB', 'PostgreSQL', 'AWS',
-              'Docker', 'Next.js', 'Express', 'Git', 'Figma', 'Tailwind'
+              'React', 'Node.js', 'Python', 'Java', 'TypeScript', 'AWS',
+              'Docker', 'Jenkins', 'Kubernetes', 'MongoDB', 'AI/ML', 'NLP'
             ].map((tech, index) => (
               <div
                 key={tech}

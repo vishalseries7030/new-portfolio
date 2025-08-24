@@ -72,37 +72,43 @@ export function HeroSection() {
             <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
               <Button
                 size="lg"
-                className="bg-gradient-to-r from-portfolio-navy-500 to-portfolio-purple-600 hover:from-portfolio-navy-600 hover:to-portfolio-purple-700 text-white border-0 px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+                className="bg-gradient-to-r from-portfolio-navy-500 to-portfolio-purple-600 hover:from-portfolio-navy-600 hover:to-portfolio-purple-700 text-white border-0 px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 hover-glow"
                 onClick={() => scrollToNext()}
               >
                 <Mail className="w-5 h-5 mr-2" />
                 Get In Touch
               </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                className="border-2 border-portfolio-navy-500/20 hover:border-portfolio-navy-500/40 bg-white/5 hover:bg-white/10 px-8 py-4 text-lg font-semibold rounded-full backdrop-blur-sm transition-all duration-300"
+              <a
+                href="https://drive.google.com/file/d/17Gt6BQOOYRGSNkoyRY67owxQvTWpLMpm/view"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <Download className="w-5 h-5 mr-2" />
-                Download CV
-              </Button>
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="border-2 border-portfolio-navy-500/20 hover:border-portfolio-navy-500/40 bg-white/5 hover:bg-white/10 px-8 py-4 text-lg font-semibold rounded-full backdrop-blur-sm transition-all duration-300"
+                >
+                  <Download className="w-5 h-5 mr-2" />
+                  Download CV
+                </Button>
+              </a>
             </div>
           </div>
 
           {/* Stats */}
           <div className={`transition-all duration-1000 delay-1300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <div className="grid grid-cols-3 gap-8 max-w-md mx-auto mt-16">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-gradient">3+</div>
-                <div className="text-sm text-foreground/60 mt-1">Years Experience</div>
+              <div className="text-center group">
+                <div className="text-3xl font-bold text-gradient group-hover:scale-110 transition-transform duration-300">3+</div>
+                <div className="text-sm text-foreground/60 mt-1 group-hover:text-foreground/80 transition-colors duration-300">Years Experience</div>
               </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-gradient">50+</div>
-                <div className="text-sm text-foreground/60 mt-1">Projects Done</div>
+              <div className="text-center group">
+                <div className="text-3xl font-bold text-gradient group-hover:scale-110 transition-transform duration-300">7+</div>
+                <div className="text-sm text-foreground/60 mt-1 group-hover:text-foreground/80 transition-colors duration-300">Projects Done</div>
               </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-gradient">∞</div>
-                <div className="text-sm text-foreground/60 mt-1">Lines of Code</div>
+              <div className="text-center group">
+                <div className="text-3xl font-bold text-gradient group-hover:scale-110 transition-transform duration-300">∞</div>
+                <div className="text-sm text-foreground/60 mt-1 group-hover:text-foreground/80 transition-colors duration-300">Lines of Code</div>
               </div>
             </div>
           </div>
