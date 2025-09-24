@@ -164,3 +164,21 @@
     animation-delay: var(--stagger-delay, 0ms);
   }
 }
+
+
+
+
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes move {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100%); }
+}
+
+.animate-text-glow {
+  text-shadow: 0 0 10px rgba(236,72,153,0.6), 0 0 20px rgba(139,92,246,0.5);
+}
